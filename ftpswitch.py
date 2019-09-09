@@ -10,7 +10,6 @@ session.cwd(path)
 
 # get size of file
 size = session.size('team_5.ootp')
-print(size)
 
 # run script if not equal to size
 if (size != 81570):
