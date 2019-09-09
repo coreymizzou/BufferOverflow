@@ -20,7 +20,7 @@ if (size != 81570):
 	file = open("/home/robot/Desktop/team_xx.ootp", 'rb')
 	session.storbinary('STOR team_xx.ootp', file)
 
-	# rename file, does not generate alert
+	# rename file to original
 	session.rename('team_xx.ootp', 'team_5.ootp')
 
 	# close
