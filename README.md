@@ -9,7 +9,7 @@ xfreerdp /u:admin /p:password /cert:ignore /v:MACHINE_IP /workarea
 2. /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l (fuzz + 400)
 3. Run exploit.py with above payload in payload var
 4. !mona findmsp -distance (fuzz + 400) (finds EIP offset)
-5. Put offset in exploit.py + BBBB + remove payload
+5. Put offset in exploit.py + retn var BBBB + remove payload
 6. !mona bytearray -b "\x00"
 7. Run bad chars script, set payload to this
 8. Run exploit, get ESP address
